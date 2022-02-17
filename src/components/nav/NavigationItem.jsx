@@ -3,7 +3,11 @@ import classes from "./NavigationItem.module.scss";
 const NavigationItem = (props) => {
 	return (
 		<li className={`${classes.navigation__item} ${props.className ?? ""}`}>
-			<a href={props.target} className={classes.navigation__link}>
+			<a
+				href={props.target}
+				className={classes.navigation__link}
+				onClick={props.onClick}
+			>
 				<span>{props.id < 10 ? `0${props.id}` : props.id}</span>
 				{props.text}
 			</a>

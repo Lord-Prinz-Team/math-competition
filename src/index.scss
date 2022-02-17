@@ -9,6 +9,7 @@
 
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 	@include respond(tab-land) {
 		font-size: 56.25%;
 	}
@@ -27,6 +28,7 @@ body {
 	font-family: $font-primary;
 	line-height: 1.7;
 	color: $font-color;
+
 	@include respond(tab-port) {
 		padding: 0;
 	}

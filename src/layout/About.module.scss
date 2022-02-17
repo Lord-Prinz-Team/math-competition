@@ -1,5 +1,7 @@
+@import "./../scss/abstracts/variables";
+
 .about {
-	background: #262626;
+	background-color: $color-light;
 	padding: 10rem 0;
 	grid-column: full-start/full-end;
 	grid-row: 2/3;

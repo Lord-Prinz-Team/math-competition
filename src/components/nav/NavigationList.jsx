@@ -7,6 +7,7 @@ const NavigationList = (props) => {
 		<ul className={classes.navigation__list}>
 			{linksData.map((linkData, index) => (
 				<NavigationItem
+					onClick={props.onClick}
 					key={index + 1}
 					id={index + 1}
 					target={linkData.url}

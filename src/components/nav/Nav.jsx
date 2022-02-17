@@ -30,7 +30,7 @@ const Nav = (props) => {
 		<nav
 			className={`${classes.navigation__nav} ${props.isActive && classes.active}`}
 		>
-			<NavigationList linksData={linksData} />
+			<NavigationList linksData={linksData} onClick={props.onClick} />
 		</nav>
 	);
 };

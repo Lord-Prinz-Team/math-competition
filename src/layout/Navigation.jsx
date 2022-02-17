@@ -17,7 +17,7 @@ const Navigation = () => {
 		<div className={classes.navigation}>
 			<NavigationButton isActive={isActive} onClick={toggleNavigation} />
 			<NavigationBackground isActive={isActive} />
-			<Nav isActive={isActive} />
+			<Nav onClick={toggleNavigation} isActive={isActive} />
 		</div>
 	);
 };
