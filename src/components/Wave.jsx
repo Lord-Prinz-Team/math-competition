@@ -5,6 +5,7 @@ const Wave = (props) => {
 			className={props.className}
 			style={props.style}
 			viewBox="0 0 1440 320"
+			preserveAspectRatio="none"
 		>
 			<path
 				fill={props.fill ?? "#262626"}

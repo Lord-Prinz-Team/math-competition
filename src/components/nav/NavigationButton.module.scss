@@ -1,12 +1,12 @@
 @import "./../../scss/abstracts/variables";
-
+@import "./../../scss/abstracts/mixins";
 .navigation {
 	&__button {
 		outline: 0;
 		border: 0;
 		background-color: #fff;
-		height: 7rem;
-		width: 7rem;
+		height: 6.3rem;
+		width: 6.3rem;
 		position: fixed;
 		top: 6rem;
 		right: 6rem;
@@ -18,6 +18,14 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@include respond(tab-port) {
+			top: 4rem;
+			right: 4rem;
+		}
+		@include respond(phone) {
+			top: 3rem;
+			right: 3rem;
+		}
 	}
 	&__icon {
 		user-select: none;
@@ -44,5 +52,24 @@
 		&::after {
 			top: 0.8rem;
 		}
+	}
+	&__button:hover &__icon::before {
+		top: -1rem;
+	}
+	&__button:hover &__icon::after {
+		top: 1rem;
+	}
+}
+
+.active {
+	background-color: transparent;
+
+	&::before {
+		top: 0 !important;
+		transform: rotate(-135deg);
+	}
+	&::after {
+		top: 0 !important;
+		transform: rotate(135deg);
 	}
 }
