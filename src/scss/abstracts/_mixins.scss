@@ -1,3 +1,5 @@
+@import "./variables";
+
 //Media Query
 
 /*
@@ -38,4 +40,13 @@ $breakpoint arguments
 			@content;
 		}
 	}
+}
+
+@mixin heading {
+	background-image: linear-gradient(to right, $color-secondary, $color-primary);
+	display: inline-block;
+	color: transparent;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-weight: 700;
 }

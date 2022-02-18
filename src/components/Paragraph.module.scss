@@ -4,4 +4,8 @@
 	font-family: inherit;
 	font-size: inherit;
 	color: inherit;
+
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
 }

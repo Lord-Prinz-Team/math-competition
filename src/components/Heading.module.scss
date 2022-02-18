@@ -1,22 +1,37 @@
+@import "./../scss/abstracts/variables";
+@import "./../scss/abstracts/mixins";
 .heading {
-	font-weight: bold;
-
 	&--1 {
-		font-size: 7rem;
+		font-size: 6rem;
 	}
 	&--2 {
-		font-size: 4rem;
+		font-size: 3.5rem;
+		@include respond(tab-port) {
+			font-size: 3rem;
+		}
+		@include respond(phone) {
+			font-size: 2.5rem;
+		}
 	}
 	&--3 {
-		font-size: 3.2rem;
-	}
-	&--4 {
 		font-size: 3rem;
 	}
-	&--5 {
+	&--4 {
 		font-size: 2.5rem;
 	}
-	&--6 {
+	&--5 {
 		font-size: 2rem;
+	}
+	&--6 {
+		font-size: 1.5rem;
+	}
+	@include heading;
+}
+
+.animation {
+	transition: all 0.2s;
+	&:hover {
+		transform: skewY(2deg) skewX(15deg) scale(1.1);
+		text-shadow: 0.5rem 1rem 2rem rgba(#000, 0.2);
 	}
 }
