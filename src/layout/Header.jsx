@@ -11,7 +11,7 @@ const Header = (props) => {
 				<img src={logoWhite} alt="Logo" className={classes.logo} />
 			</div>
 			<Heading className={classes["heading-primary"]} style={{ textAlign: "center" }}>
-				<span className={classes["heading-primary-main"]}>Machina</span>
+				<span className={classes["heading-primary-main"]}>Mechanizm</span>
 				<span className={classes["heading-primary-sub"]}>z antykithiry</span>
 			</Heading>
 			<Button animation={true} type="white" target="#about">

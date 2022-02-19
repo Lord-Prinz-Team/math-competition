@@ -11,8 +11,8 @@ const linksData = [
 		url: "#about",
 	},
 	{
-		name: "Link 3",
-		url: "#",
+		name: "Origin",
+		url: "#origin",
 	},
 	{
 		name: "Link 4",

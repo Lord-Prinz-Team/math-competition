@@ -1,4 +1,3 @@
-import "./App.scss";
 import useDocumentTitle from "./hooks/useDocumentTitle";
 import About from "./layout/About";
 import Header from "./layout/Header";
@@ -7,7 +6,7 @@ import Navigation from "./layout/Navigation";
 
 const App = () => {
 	const [documentTitle, setDocumentTitle] = useDocumentTitle(
-		"Machina z Antykithiry"
+		"Mechanizm z Antykithiry"
 	);
 
 	return (
