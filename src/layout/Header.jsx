@@ -4,7 +4,7 @@ import Wave from "../components/Wave";
 import classes from "./Header.module.scss";
 import logoWhite from "./../assets/img/logo-white.svg";
 
-const Header = (props) => {
+const Header = () => {
 	return (
 		<header className={classes.header}>
 			<div className={classes["header__logo-box"]}>

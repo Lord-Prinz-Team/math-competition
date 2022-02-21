@@ -23,6 +23,10 @@ const linksData = [
 		name: "Link 5",
 		url: "#",
 	},
+	{
+		name: "Link 6",
+		url: "#",
+	},
 ];
 
 const Nav = (props) => {

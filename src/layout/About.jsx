@@ -3,7 +3,6 @@ import Paragraph from "../components/Paragraph";
 import classes from "./About.module.scss";
 import mechanizm from "./../assets/img/mechanizm.jpg";
 import Button from "../components/Button";
-import Wave from "../components/Wave";
 
 const About = (props) => {
 	return (
@@ -43,7 +42,6 @@ const About = (props) => {
 					<img src={mechanizm} className={classes.image} />
 				</div>
 			</div>
-			<Wave className={classes.wave} fill="#eee" />
 		</section>
 	);
 };
