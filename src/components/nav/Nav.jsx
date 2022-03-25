@@ -15,9 +15,8 @@ const linksData = [
 		url: "#origin",
 	},
 	{
-		name: "Link 4",
-		url:
-			"https://kalkulatory.link4.pl/moto/?partner_id=862&saids=58700007567589337_p68192028005&ds_rl=1163567&ds_rl=1167526&ds_rl=1167829&gclid=CjwKCAiAgbiQBhAHEiwAuQ6Bknaa07cUG9utoPUtkqmDslinXmSwYM4mWoJJUefdb6rQK-hWsAuJRxoCcOYQAvD_BwE&gclsrc=aw.ds",
+		name: "Construction",
+		url: "#construction",
 	},
 	{
 		name: "Link 5",
