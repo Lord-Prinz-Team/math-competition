@@ -1,6 +1,8 @@
 import useDocumentTitle from "./hooks/useDocumentTitle";
 import About from "./layout/About";
 import Construction from "./layout/Construction";
+import Footer from "./layout/Footer";
+import FunFact from "./layout/FunFact";
 import Header from "./layout/Header";
 import Layout from "./layout/Layout";
 import Navigation from "./layout/Navigation";
@@ -18,6 +20,8 @@ const App = () => {
 			<About />
 			<Origin />
 			<Construction />
+			<FunFact />
+			<Footer />
 		</Layout>
 	);
 };

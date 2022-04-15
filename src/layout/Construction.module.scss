@@ -4,7 +4,7 @@
     background-color: $color-grey-darker;
     color: $color-light;
     margin-top: 10rem;
-    padding: 10rem 0;
+    padding-top: 10rem;
     grid-column: full-start/full-end;
     grid-row: 4/5;
     display: grid;
@@ -46,5 +46,5 @@
     color: $color-light;
     padding-top: 15rem;
     position: relative;
-    padding-bottom: 10rem;
+    padding-bottom: 3rem;
 }

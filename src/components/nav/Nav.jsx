@@ -1,32 +1,6 @@
 import classes from "./Nav.module.scss";
 import NavigationList from "./NavigationList";
-
-const linksData = [
-	{
-		name: "Heading",
-		url: "#",
-	},
-	{
-		name: "About",
-		url: "#about",
-	},
-	{
-		name: "Origin",
-		url: "#origin",
-	},
-	{
-		name: "Construction",
-		url: "#construction",
-	},
-	{
-		name: "Link 5",
-		url: "#",
-	},
-	{
-		name: "Link 6",
-		url: "#",
-	},
-];
+import linksData from "./../../assets/data/navigation.json";
 
 const Nav = (props) => {
 	return (
