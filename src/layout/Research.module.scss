@@ -1,6 +1,6 @@
 @import "./../scss/abstracts/variables";
 @import "./../scss/abstracts/mixins";
-.fun-fact {
+.research {
     grid-column: full-start/full-end;
     grid-row: 5/6;
     display: grid;
@@ -8,8 +8,9 @@
     grid-template-rows: repeat(2, min-content);
     position: relative;
     z-index: 20;
-    padding-top: 100rem;
+    padding-top: 25rem;
     background-color: $color-light;
+    padding-bottom: 15rem;
 }
 
 .wave {
@@ -21,5 +22,25 @@
     transform: scaleY(-1);
     &>path {
         fill: $color-grey-darker;
+    }
+}
+
+.heading {
+    grid-row: 1/2;
+    grid-column: center-start/center-end;
+    z-index: 2;
+}
+
+.container {
+    grid-row: 2/3;
+    grid-column: center-start/center-end;
+    padding: 10rem 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.heading {
+    &--1 {
+        font-size: 2.5rem;
     }
 }

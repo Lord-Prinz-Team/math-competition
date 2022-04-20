@@ -3,38 +3,54 @@ import Paragraph from "../components/Paragraph";
 import classes from "./About.module.scss";
 import mechanizm from "./../assets/img/mechanizm.jpg";
 import Button from "../components/Button";
-
+import { Parallax } from "react-scroll-parallax";
+import { useState, useEffect } from "react";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 const About = (props) => {
+	const defaultTitle = "Mechanizm z Antykithiry";
+
+	const [progress, seProgress] = useState(1);
+	const [title, setTitle] = useDocumentTitle("");
+	useEffect(() => {
+		console.log(progress, "about");
+
+		return () => {
+			if (progress > 0) {
+				setTitle(`${defaultTitle} | About`);
+			}
+		};
+	}, [progress]);
+
 	return (
 		<section id="about" className={classes.about}>
+			<Parallax onProgressChange={(progress) => seProgress(progress)} />
 			<header className={`${classes.heading} u-center-text u-margin-bottom-big`}>
 				<Heading isAnimated={true} size="2">
-					Czym jest mechanizm z Antykithiry?
+					O mechaniźmie
 				</Heading>
 			</header>
 
 			<div className={classes["flex-container"]}>
 				<div className={classes.text}>
 					<Heading className="u-margin-bottom-small" size="3">
-						Lorem ipsum dolor sit amet
+						Czym jest mechanizm z Antykithiry?
 					</Heading>
 					<Paragraph>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus
-						sapien odio, ac scelerisque diam hendrerit nec. Maecenas tincidunt felis nec
-						lacus porttitor luctus. Nullam lacinia luctus eros, nec iaculis sem rutrum id.
-						Pellentesque rutrum odio sed urna condimentum facilisis. Phasellus molestie sit
-						amet odio tristique fringilla. Nullam erat ex.
+						Mechanizm z Antykithiry to tajemniczy, starożytny przyrząd służący do obliczania
+						pozycji ciał niebieskich. Mechanizm powstał ponad 2000 lat temu. Był on
+						najbardziej złożonym mechanizmem do czasów XVII-wiecznych zegarów. Autor tego
+						dzieła techniki nie jest jeszcze znany. Ale z odczytu inskrypcji wykonanych w
+						brązie wynika, że autor miał świetną znajomość astromii i matematyki.
 					</Paragraph>
 
-					<Heading className="u-margin-bottom-small" size="3">
-						Lorem ipsum dolor sit amet
-					</Heading>
+					{/* <Heading className="u-margin-bottom-small" size="3"></Heading> */}
 					<Paragraph>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus
-						sapien odio, ac scelerisque diam hendrerit nec. Maecenas tincidunt felis nec
-						lacus porttitor luctus. Nullam lacinia luctus eros, nec iaculis sem rutrum id.
-						Pellentesque rutrum odio sed urna condimentum facilisis. Phasellus molestie sit
-						amet odio tristique fringilla. Nullam erat ex.
+						Mechanizm mimo, że nie przypomina dzisiejszego komputera to spełniał podobne
+						funkcje - liczył. Mechanizm z Antykithiry często określa się mianem pierwszego
+						komputera lub starożytnego komputera. Obiekt łączy w sobie wiedzę greckich,
+						egipskich i babilońskich myślicieli. Badania tego mechanizmu <b>wciąż</b> się
+						nie zakończyły. Na zdjęciu obok można zobaczyć największy kawałek tego
+						niezwykłego urządzenia.
 					</Paragraph>
 					<Button target="#origin">Pochodzenie &rarr;</Button>
 				</div>

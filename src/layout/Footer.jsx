@@ -1,9 +1,9 @@
 import classes from "./Footer.module.scss";
-import logo from "./../assets/img/logo-white.svg";
 import Paragraph from "../components/Paragraph";
-import Nav from "../components/nav/Nav";
 import FooterList from "../components/nav/FooterList";
 const Footer = () => {
+	const currentYear = new Date().getFullYear();
+
 	return (
 		<footer className={classes.footer}>
 			<div className={classes["footer__logo-box"]}>
@@ -44,7 +44,7 @@ const Footer = () => {
 					>
 						Oskara Płazińskiego
 					</a>
-					. &copy; Copyright 2022
+					. &copy; Copyright {currentYear}
 				</Paragraph>
 			</div>
 		</footer>

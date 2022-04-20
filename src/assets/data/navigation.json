@@ -1,25 +1,25 @@
 [{
-        "name": "Heading",
-        "url": "#"
+        "name": "Wstęp",
+        "url": "/#"
     },
     {
-        "name": "About",
-        "url": "#about"
+        "name": "O Mechaniźmie",
+        "url": "/#about"
     },
     {
-        "name": "Origin",
-        "url": "#origin"
+        "name": "Pochodzenie",
+        "url": "/#origin"
     },
     {
-        "name": "Construction",
-        "url": "#construction"
+        "name": "Budowa",
+        "url": "/#construction"
     },
     {
-        "name": "Link 5",
-        "url": "#"
+        "name": "Badania",
+        "url": "/#"
     },
     {
-        "name": "Link 6",
-        "url": "#"
+        "name": "O Mnie",
+        "url": "/about"
     }
 ]
