@@ -20,6 +20,7 @@ const Research = () => {
 				</Heading>
 				<Paragraph></Paragraph>
 			</div>
+			<Wave className={classes["wave--1"]} />
 		</section>
 	);
 };

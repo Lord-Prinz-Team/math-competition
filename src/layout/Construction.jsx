@@ -2,8 +2,7 @@ import Heading from "../components/Heading";
 import Paragraph from "../components/Paragraph";
 import classes from "./Construction.module.scss";
 import mechanizm from "./../assets/img/mechanizm--4.png";
-import visualisation from "./../assets/img/mechanizm--front-cover.png";
-import arrow from "./../assets/img/arrow--white.svg";
+
 const Construction = () => {
 	return (
 		<section className={classes.construction} id="construction">
@@ -38,7 +37,9 @@ const Construction = () => {
 				>
 					Działanie
 				</Heading>
-				<Paragraph className={`${classes.paragraph} ${classes["text--2"]}`}>
+				<Paragraph
+					className={`${classes.paragraph} ${classes["text--2"]} u-margin-bottom-medium`}
+				>
 					Tarcza umieszczona z przodu pokazywała ruch Słońca, Księżyca i planet na tle
 					zodiaku oraz kalendarza egipskiego z uwzględnieniem roku przestępnego. Mechanizm
 					potrafił również obliczyć dzień, w którym wystpąpi zaćmienie Księżyca.
@@ -48,7 +49,7 @@ const Construction = () => {
 					gwiazdozbiorów oraz pozycję niektórych gwiazd.
 				</Paragraph>
 
-				<header
+				{/* <header
 					className={`${classes["heading--3"]} u-center-text u-margin-bottom-big`}
 				>
 					<Heading
@@ -68,7 +69,7 @@ const Construction = () => {
 							<div className={classes["caption--1"]}>Cykl planetarny</div>
 						</div>
 					</div>
-				</header>
+				</header> */}
 			</div>
 		</section>
 	);
