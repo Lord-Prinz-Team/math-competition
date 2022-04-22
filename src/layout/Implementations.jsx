@@ -15,10 +15,10 @@ const Implementations = () => {
 			</header>
 
 			<div className={`slide-container ${classes["slide-container"]}`}>
-				<Slide transitionDuration={500} indicators={true} arrows={false}>
-					<SliderItem key={Math.random()}>ASS</SliderItem>
+				{/* <Slide transitionDuration={500} >
+					<SliderItem key={Math.random()}>AAA</SliderItem>
 					<SliderItem key={Math.random()}>XDD</SliderItem>
-				</Slide>
+				</Slide> */}
 			</div>
 		</section>
 	);
