@@ -1,14 +1,32 @@
-[ {
-    "title": "",
-    "img": ""
-}, {
-    "title": "",
-    "img": ""
-}, {
-    "title": "",
-    "img": ""
-}, {
-    "title": "",
-    "img": ""
-}
+[
+	{
+		"title": "Przedni talerz",
+		"description": ["Ruch Gwiazd"],
+		"img": "src/assets/img/mechanizm--front-plate.png"
+	},
+	{
+		"title": "Tylny talerz",
+		"description": ["Nazwy miesięcy", "Charakteryzacja zaćmień", "Glify zaćmienia"],
+		"img": "src/assets/img/mechanizm--back-plate.png"
+	},
+	{
+		"title": "Przednia osłona",
+		"description": ["Cykl planetarny"],
+		"img": "src/assets/img/mechanizm--front-cover.png"
+	},
+	{
+		"title": "Tylna osłona",
+		"description": [
+			"Opis kosmosu",
+			"Struktura kalendarza",
+			"Cykle słońca i księżca"
+		],
+		"img": "src/assets/img/mechanizm--back-cover.png"
+	},
+	{
+		"title": "Budowa wewnętrzna",
+		"description": [],
+		"img": "src/assets/img/budowa.png",
+		"custom": true
+	}
 ]

@@ -1,10 +1,18 @@
 import classes from "./ControlOption.module.scss";
 
 const ControlOption = (props) => {
-    return (
-    <div className={classes.control__option} onClick={props.onClick} >
-       {props.index + 1} | {props.children}
-    </div>)
-}
+	const isActive = props.isActive;
+	const isLoading = props.isLoading;
+	return (
+		<div
+			className={`${classes.control__option} ${isActive && classes.active} ${
+				isLoading && classes.loading
+			}`}
+			onClick={props.onClick}
+		>
+			<span className={classes.text}>{props.children}</span>
+		</div>
+	);
+};
 
 export default ControlOption;

@@ -1,0 +1,96 @@
+@import "./../../scss/abstracts/variables";
+.slide {
+	height: 100%;
+	display: flex;
+	gap: 2rem;
+	justify-items: center;
+}
+
+.img {
+	&__cover {
+		flex: 2;
+		position: relative;
+	}
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-right: 2rem;
+}
+
+.arrow {
+	width: 50%;
+	position: absolute;
+	transform: rotate(45deg);
+}
+
+.text {
+	flex: 3;
+	display: flex;
+}
+
+.title {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	position: relative;
+	justify-self: end;
+	align-self: end;
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+	transform: rotate(270deg) translateY(9rem);
+	&::before {
+		content: "";
+		top: 50%;
+		width: 1rem;
+		height: 1px;
+		position: absolute;
+		background-color: $font-color;
+		transform: translateX(calc(-100% - 2px));
+	}
+	&::after {
+		content: "";
+		top: 50%;
+		transform: translateX(calc(100% - 8px));
+		width: 1rem;
+		height: 1px;
+		position: absolute;
+		background-color: $font-color;
+		display: inline-block;
+	}
+}
+
+.heading {
+	display: block;
+	text-align: center;
+	font-size: 2.6rem;
+}
+
+.fadeIn {
+	animation: fadeIn 0.3s;
+}
+
+.fadeOut {
+	animation: fadeOut 0.3s;
+}
+
+@keyframes fadeIn {
+	from {
+		transform: translateY(3rem);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(-3rem);
+		opacity: 0;
+	}
+}

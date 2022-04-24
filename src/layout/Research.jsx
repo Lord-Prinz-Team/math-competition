@@ -5,7 +5,7 @@ import classes from "./Research.module.scss";
 
 const Research = () => {
 	return (
-		<section className={classes.research}>
+		<section className={classes.research} id="research">
 			<Wave className={classes.wave} />
 
 			<header className={`${classes.heading} u-center-text u-margin-bottom-big`}>

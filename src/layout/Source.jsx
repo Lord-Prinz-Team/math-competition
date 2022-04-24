@@ -4,7 +4,7 @@ import classes from "./Source.module.scss";
 
 const Source = () => {
 	return (
-		<div className={classes.source}>
+		<div className={classes.source} id="source">
 			<header className={`${classes.header} u-center-text u-margin-bottom-medium`}>
 				<Heading size="2" isAnimated={true}>
 					Źródła

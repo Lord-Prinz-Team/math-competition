@@ -1,24 +1,30 @@
 import Heading from "../components/Heading";
 import Wave from "../components/Wave";
 import classes from "./Implementations.module.scss";
-import { Slide } from "react-slideshow-image";
-import SliderItem from "../components/SlideItem";
+import implementations from "./../assets/data/implementacja.json";
+import Implementation from "../components/Implementation";
 
 const Implementations = () => {
 	return (
-		<section className={classes.implementations}>
+		<section className={classes.implementations} id="implementations">
 			<Wave className={classes.wave} />
-			<header className={`${classes.heading} u-center-text u-margin-bottom-medium`}>
+			<header className={`${classes.heading} u-center-text u-margin-bottom-big`}>
 				<Heading isAnimated={true} size="2">
 					Implementacje
 				</Heading>
 			</header>
-
-			<div className={`slide-container ${classes["slide-container"]}`}>
-				{/* <Slide transitionDuration={500} >
-					<SliderItem key={Math.random()}>AAA</SliderItem>
-					<SliderItem key={Math.random()}>XDD</SliderItem>
-				</Slide> */}
+			<div className={classes.implementation__container}>
+				{implementations.map((implementation, index) => {
+					return (
+						<Implementation
+							key={index}
+							index={index}
+							img={implementation.img}
+							title={implementation.title}
+							text={implementation.text}
+						/>
+					);
+				})}
 			</div>
 		</section>
 	);
