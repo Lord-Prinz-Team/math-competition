@@ -16,7 +16,7 @@ const Implementation = (props) => {
 					textAlign,
 				}}
 			>
-				<Heading size={4} className={classes.heading}>
+				<Heading size={4} className={`${classes.heading} u-margin-bottom-small`}>
 					{props.title}
 				</Heading>
 				<Paragraph>{props.text}</Paragraph>

@@ -29,5 +29,5 @@ const Implementations = () => {
 		</section>
 	);
 };
-
+// https://www.pcworld.pl/news/Najstarszy-komputer-swiata-odtworzony-z-klockow-Lego-Dziala-wideo,364983.html
 export default Implementations;
