@@ -1,17 +1,16 @@
-[
-	{
-		"img": "src/assets/img/lego--1.jpg",
-		"title": "Polski prototyp lego",
-		"text": "Konstrukcja została złożona przez Marka Mazurkiewicza 19 września 2011 w ramach XV Festiwalu Nauki w Centrumu Astronomicznym im. Mikołaja Kopernika."
-	},
-	{
-		"img": "src/assets/img/replika.jpg",
-		"title": "Brytyjski wirtualny model",
-		"text": "Aktualnie brak"
-	},
-	{
-		"img": "src/assets/img/lego--2.png",
-		"title": "Prototyp Lego",
-		"text": "Konstrukcja składa się z 1500 klocków lego, 110 kół, i pochłonęła 30 dni pracy. Konstrukcja została stworzona przez Andrew Carol'a w 2010 roku."
-	}
+[{
+        "img": "src/assets/img/lego--1.jpg",
+        "title": "Polski prototyp lego",
+        "text": "Konstrukcja została złożona przez Marka Mazurkiewicza 19 września 2011 w ramach XV Festiwalu Nauki w Centrumu Astronomicznym im. Mikołaja Kopernika."
+    },
+    {
+        "img": "src/assets/img/replika.jpg",
+        "title": "Brytyjski wirtualny model",
+        "text": "Aktualnie brak"
+    },
+    {
+        "img": "src/assets/img/lego--2.png",
+        "title": "Prototyp Lego",
+        "text": "Konstrukcja składa się z 1500 klocków lego, 110 kół, i pochłonęła 30 dni pracy. Konstrukcja została stworzona przez Andrew Carol'a w 2010 roku."
+    }
 ]
