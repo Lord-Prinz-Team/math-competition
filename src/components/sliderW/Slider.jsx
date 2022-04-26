@@ -36,6 +36,7 @@ const Slider = (props) => {
 				changeSlide={changeSlide}
 				loadingSlide={options.length === currentSlide + 1 ? 0 : currentSlide + 1}
 			/>
+			
 			<SliderControler options={options} currentSlide={currentSlide} />
 		</div>
 	);

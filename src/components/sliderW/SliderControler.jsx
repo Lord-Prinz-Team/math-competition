@@ -2,6 +2,7 @@ import Slide from "./Slide";
 import classes from "./SliderControler.module.scss";
 
 const SliderControler = (props) => {
+
 	const slide = props.currentSlide;
 
 	return (
@@ -9,7 +10,7 @@ const SliderControler = (props) => {
 			{props.options.map((option, index) => {
 				if (slide === index) {
 					return (
-						<Slide key={index} img={option.img} isCustom={!!option.custom}>
+						<Slide key={index} description={option.description} img={option.img} isCustom={!!option.custom}>
 							{option.title}
 						</Slide>
 					);

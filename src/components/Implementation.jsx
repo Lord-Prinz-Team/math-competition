@@ -43,7 +43,7 @@ const customComponent = <div className={classes["implementation--custom"]}>
 	</div>
 </div>
 
-const embed = <iframe className={classes.iframe} src="https://www.youtube.com/embed/IT0gXa1ZrnA" title="YouTube video player" frameborder="0" allow="accelerometer;" autop allowfullscreen></iframe>
+const embed = <iframe className={classes.iframe} src="https://www.youtube.com/embed/IT0gXa1ZrnA" title="YouTube video player" frameBorder="0" allow="accelerometer;" autoPlay allowFullScreen></iframe>
 
 
 	return isCustom ? customComponent : isEmbed ? embed : classicalComponent;

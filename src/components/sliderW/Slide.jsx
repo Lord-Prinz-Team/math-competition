@@ -1,11 +1,9 @@
-import Heading from "../Heading";
 import classes from "./Slide.module.scss";
-import arrow from "./../../assets/img/arrow--white.svg";
 import { useEffect, useState } from "react";
 
 const Slide = (props) => {
 	const [isFadeOut, setIsFadeOut] = useState(false);
-	console.log(props);
+
 	useEffect(() => {
 		const timeout = setTimeout(() => {
 			setIsFadeOut(true);
@@ -22,11 +20,14 @@ const Slide = (props) => {
 				isFadeOut && classes.fadeOut
 			} ${props.className}`}
 		>
-			<div className={classes.text}></div>
+			<div className={classes.text}>
+				
+				{props?.description?.map((description, index) => <div key={index} className={`${classes.description}`}>
+					{description}
+				</div>)} 
+			</div>
 			<div className={classes.img__cover}>
 				<img src={`/${props.img}`} className={classes.img} />
-				{/* <img src={arrow} className={classes.arrow} /> */}
-				{/* <div className={classes.title}>{props.children}</div> */}
 			</div>
 		</div>
 	);
