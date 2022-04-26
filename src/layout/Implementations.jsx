@@ -17,6 +17,8 @@ const Implementations = () => {
 				{implementations.map((implementation, index) => {
 					return (
 						<Implementation
+							isEmbed={implementation.isEmbed}
+							isCustom={implementation.isCustom}
 							key={index}
 							index={index}
 							img={implementation.img}
@@ -29,5 +31,4 @@ const Implementations = () => {
 		</section>
 	);
 };
-// https://www.pcworld.pl/news/Najstarszy-komputer-swiata-odtworzony-z-klockow-Lego-Dziala-wideo,364983.html
 export default Implementations;
