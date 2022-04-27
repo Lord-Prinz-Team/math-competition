@@ -54,24 +54,33 @@
     &--1 {
         font-size: 2.5rem;
         grid-row: 1/2;
-        grid-column: 1/-1
+        grid-column: 1/-1;
+        text-transform: capitalize;
     }
     &--2 {
         grid-row: 3/4;
-        grid-column: 1/-1
+        grid-column: 1/-1;
+        text-transform: capitalize;
+
     }
 
     &--3 {
         grid-row: 5/6;
-        grid-column: 1/-1
+        grid-column: 1/-1;
+        text-transform: capitalize;
+
     }
     &--4 {
         grid-row: 7/8;
-        grid-column: 1/-1
+        grid-column: 1/-1;
+        text-transform: capitalize;
+
     }
     &--5 {
         grid-row: 10/11;
-        grid-column: 1/-1
+        grid-column: 1/-1;
+        text-transform: capitalize;
+
     }
 }
 
