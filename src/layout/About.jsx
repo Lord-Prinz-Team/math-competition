@@ -3,27 +3,10 @@ import Paragraph from "../components/Paragraph";
 import classes from "./About.module.scss";
 import mechanizm from "./../assets/img/mechanizm.jpg";
 import Button from "../components/Button";
-import { Parallax } from "react-scroll-parallax";
-import { useState, useEffect } from "react";
-import useDocumentTitle from "../hooks/useDocumentTitle";
-const About = (props) => {
-	const defaultTitle = "Mechanizm z Antykithiry";
-
-	const [progress, seProgress] = useState(1);
-	const [title, setTitle] = useDocumentTitle("");
-	useEffect(() => {
-		console.log(progress, "about");
-
-		return () => {
-			if (progress > 0) {
-				setTitle(`${defaultTitle} | About`);
-			}
-		};
-	}, [progress]);
+const About = () => {
 
 	return (
 		<section id="about" className={classes.about}>
-			<Parallax onProgressChange={(progress) => seProgress(progress)} />
 			<header className={`${classes.heading} u-center-text u-margin-bottom-big`}>
 				<Heading isAnimated={true} size="2">
 					O mechaniźmie
@@ -43,7 +26,6 @@ const About = (props) => {
 						brązie wynika, że autor miał świetną znajomość astromii i matematyki.
 					</Paragraph>
 
-					{/* <Heading className="u-margin-bottom-small" size="3"></Heading> */}
 					<Paragraph>
 						Mechanizm mimo, że nie przypomina dzisiejszego komputera to spełniał podobne
 						funkcje - liczył. Mechanizm z Antykithiry często określa się mianem pierwszego

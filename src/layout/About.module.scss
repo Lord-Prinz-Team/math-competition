@@ -1,4 +1,5 @@
 @import "./../scss/abstracts/variables";
+@import "./../scss/abstracts/mixins";
 .about {
     background-color: $color-light;
     padding: 10rem 0;
@@ -19,12 +20,20 @@
     grid-column: center-start/center-end;
     grid-row: 2/3;
     z-index: 2;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
 }
 
 .text {
     font-size: 1.7rem;
     flex: 2;
     margin-right: 6rem;
+
+    @include respond(tab-port) {
+        margin: 0 auto;
+    }
 }
 
 .image {
@@ -36,6 +45,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include respond(tab-port) {
+            padding-top:5rem;
+        }
+    }
+
+    @include respond(tab-port) {
+        max-width: 35rem;
     }
 }
 

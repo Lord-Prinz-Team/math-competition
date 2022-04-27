@@ -30,6 +30,10 @@
     width: 15rem;
     .img {
         transform: scale(0.45);
+
+        @include respond(tab-port) {
+            transform: scale(0.30);
+        }
     }
 }
 
@@ -40,6 +44,12 @@
     &_text {
         display: inline-block;
     }
+    @include respond(tab-port) {
+        grid-row:3/4;
+        grid-column: center-start/center-end;
+        text-align: center;
+    }
+    
 }
 
 .link {
@@ -64,4 +74,9 @@
     grid-column: center-start/ col-start 4;
     grid-row: 2/3;
     text-align: left;
+    @include respond(tab-port) {
+        grid-row:2/3;
+        grid-column: center-start/center-end;
+        text-align: center;
+    }
 }

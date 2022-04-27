@@ -1,9 +1,13 @@
 @import "./../../scss/abstracts/variables";
+@import "./../../scss/abstracts/mixins";
 .slide {
 	height: 100%;
 	display: flex;
 	gap: 2rem;
 	justify-items: center;
+	@include respond(tab-port) {
+		min-height:80rem;
+	}
 }
 
 .img {
@@ -16,6 +20,8 @@
 	top: 50%;
 	transform: translateY(-50%);
 	margin-right: 2rem;
+
+
 }
 
 .text {
@@ -27,6 +33,10 @@
 	position: relative;
 	margin: 15rem 0;
 	transform: translateX(3rem);
+	@include respond(tab-port) {
+		transform: translateX(0);	
+		align-items: left;
+	}
 
 }
 

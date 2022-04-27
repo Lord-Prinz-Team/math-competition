@@ -48,28 +48,6 @@ const Construction = () => {
 					przewidywać momenty wschodów i zachodów ważniejszych dla Greków gwiazd i
 					gwiazdozbiorów oraz pozycję niektórych gwiazd.
 				</Paragraph>
-
-				{/* <header
-					className={`${classes["heading--3"]} u-center-text u-margin-bottom-big`}
-				>
-					<Heading
-						size="2"
-						style={{ color: "#ddd" }}
-						className={` u-center-text u-margin-bottom-big`}
-						isAnimated={true}
-					>
-						Wizualizacja
-					</Heading>
-
-					<div className={`${classes.paralax} u-margin-bottom-big`}>
-						<div className={classes["element--1"]}>
-							<div className={classes["title--1"]}></div>
-							<img src={visualisation} className={classes["paralax_img--1"]} />
-							<img src={arrow} className={classes["arrow--1"]} />
-							<div className={classes["caption--1"]}>Cykl planetarny</div>
-						</div>
-					</div>
-				</header> */}
 			</div>
 		</section>
 	);

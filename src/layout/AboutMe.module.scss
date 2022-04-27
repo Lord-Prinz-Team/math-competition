@@ -1,4 +1,5 @@
 @import "./../scss/abstracts/variables";
+@import "./../scss/abstracts/mixins";
 .aboutMe {
     display: grid;
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat( 8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
@@ -18,6 +19,10 @@
     .heading {
         text-align: center;
     }
+    @include respond(tab-port)  {
+        grid-column: center-start/center-end;
+
+    }
 }
 
 .photo {
@@ -28,6 +33,14 @@
     justify-content: center;
     align-items: flex-end;
     padding-top: 2rem;
+
+    @include respond(tab-port) {
+        grid-column: center-start / center-end;
+        grid-row: 2/3;
+        align-items: center;
+        margin-top: 6rem;
+        
+    }
 }
 
 .image {
@@ -39,6 +52,10 @@
         border-radius: 100%;
         position: relative;
         background-color: lighten($color-tertiary, 20%);
+
+        @include respond(tab-port) {
+            width: 30%;
+        }
         // transform: translate(-30%, -15%);
         &::before {
             content: "";

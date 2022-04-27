@@ -1,8 +1,13 @@
+@import "./../scss/abstracts/mixins";
+
 .implementation {
 	padding: 3rem;
-	// border: 1px solid #ccc;
 	display: flex;
 	gap: 3rem;
+
+	@include respond(tab-port) {
+		flex-direction: column;
+	}
 
 	&--custom {
 		display: grid;

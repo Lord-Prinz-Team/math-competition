@@ -1,4 +1,4 @@
-import { Parallax, useParallax } from "react-scroll-parallax";
+import { useParallax } from "react-scroll-parallax";
 import Paragraph from "../components/Paragraph";
 import Heading from "../components/Heading";
 import Wave from "../components/Wave";
@@ -9,8 +9,6 @@ import ship from "./../assets/img/ship.png";
 import sand from "./../assets/img/sand.png";
 import wreck from "./../assets/img/ship_wreck.svg";
 import spongebob from "./../assets/img/spongebob_house.png";
-import useDocumentTitle from "../hooks/useDocumentTitle";
-import { useState, useEffect } from "react";
 
 const Origin = () => {
 	const parallax = useParallax({
@@ -22,26 +20,9 @@ const Origin = () => {
 		translateY: [-80, -80],
 	});
 
-	const defaultTitle = "Mechanizm z Antykithiry";
-
-	const [progress, seProgress] = useState(0);
-	const [title, setTitle] = useDocumentTitle("");
-	useEffect(() => {
-		console.log(progress, "origin");
-		return () => {
-			if (progress > 0) {
-				setTitle(`${defaultTitle} | Origin`);
-			}
-		};
-	}, [progress]);
 
 	return (
 		<section id="origin" className={classes.origin}>
-			<Parallax
-				className={classes.parallax__controller}
-				onProgressChange={(progress) => seProgress(progress)}
-			/>
-
 			<Wave className={classes.wave} fill="#eee" />
 
 			<div className={classes.sky}>

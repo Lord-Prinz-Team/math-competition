@@ -152,6 +152,10 @@
         transform: translateY(70%) scale(0.1);
         opacity: 0.3;
         right: 1rem;
+
+        @include respond(tab-port) {
+            transform: translateY(70%) scale(0.4);
+        }
     }
     .wreck-img {
         grid-column: col-start 1 / col-end 2;

@@ -34,6 +34,12 @@
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            font-size: 4rem;
+            letter-spacing: 2rem;
+        }
+
     }
     &-sub {
         display: block;
@@ -43,5 +49,11 @@
         animation-name: moveInRight;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+        @include respond(phone) {
+            font-size: 1.3rem;
+            letter-spacing: 1.8rem;
+
+        }
+
     }
 }

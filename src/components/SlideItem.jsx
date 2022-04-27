@@ -1,4 +1,3 @@
-import me from "./../assets/img/me.png";
 import classes from "./SliderItem.module.scss";
 
 const SliderItem = (props) => {
