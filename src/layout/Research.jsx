@@ -42,9 +42,24 @@ const Research = () => {
 				</Paragraph>
 
 				<Heading size="3" className={`${classes["heading--4"]} u-margin-bottom-small`}>
-					Badania rentgenem
+					Badania rentgenowskie
 				</Heading>
-
+				<Paragraph className={`${classes["paragraph--4"]} u-margin-bottom-medium`}>
+					Na początku lat 70 XX. wieku y brytyjski pisarz science-fiction Arthur C. Clarke zachęcił Price'a do wykorzystania w badaniach fotografii rentgenowskiej.
+					W 1971 roku przy pomocy przenośnego aparatu rentgenowskiego wykonano fotografie poszczególnych fragmentów mechanizmu. Dzięki zdjęciom Solla Price mógł dokładkie określić ile było wszystkich kół i tarcz, ile ząbków miała każda z nich oraz jakie było ich wzajemne położenie.
+					Po badaniach Amerykanin zbudował model mechanizmu z Antykithiry. Znając liczbę kół, liczbę ich ząbków oraz ich rozpieszczenie, mógł ustalić, z jaką szybkością i o ile obracały się tarcze, a na tej podstawie wywnioskować, co mogły pokazywać. Price ustalił.
+				</Paragraph>
+				<Heading size="3" className={`${classes["heading--5"]} u-margin-bottom-small`}>
+					Badania tomograficzne
+				</Heading>
+				<Paragraph className={`${classes["paragraph--5"]} u-margin-bottom-medium`}>
+				W latach 90. XX wieku eksponatem zajęli się kolejni dwaj badacze: Michael Wright z Muzeum Nauki w Londynie i Alane G. Bromley z Uniwersytetu w Sydney.
+				Ponownie dokonali jego dokładnego oglądu, obfotografowali go rentgenowsko oraz przeprowadzili jego tomografię przy pomocy specjalnie skonstruowanego na potrzeby badań drogiego urządzenia.
+				Ich zdaniem urządzanie służyło do odtwarzania ruchu Merkurego, Wenus, Marsa, Jowisza i Saturna. Mechanizm wskazywał też lata, na które przypadały igrzyska olimpijskie.
+				W 2000 roku kolejne pokolenie badaczy wyposażone w jeszcze nowszy sprzęt przeprowadziła inne badania. Grupa amerykańskich naukowców i techników pod kierunkiem matematyka Tony'ego Freetha stworzyła specjalne urządzenie pozwalające wykonać bardzo dokładne zdjęcia rentgenowskie obiektu, a następnie sporządzić jego obraz 3D.
+				Każdą część uwieczniono na około 3 tysiącach zdjęć, odczytano ponad 2 tysiące znaków, w tym terminy mechaniczne, policzono raz jeszcze liczbę zębów przy kołach. Amerykanie doszli do wniosku, że mechanizm z Antykithiry służył także do wyliczania czasów zaćmień Słońca i Księżyca.
+				Bardzo dokładny model urządzenia przedstawiono w czasopiśmie „Scientific Reports” z 2021 roku.
+				</Paragraph>
 			</div>
 			<Wave className={classes["wave--1"]} />
 		</section>
