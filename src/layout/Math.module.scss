@@ -1,0 +1,21 @@
+@import "./../scss/abstracts/variables";
+@import "./../scss/abstracts/mixins";
+
+.math {
+  background-color: $color-grey-darker;
+  color: $color-light;
+  grid-column: full-start/full-end;
+  display:grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat( 8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+}
+
+.header {
+  grid-column: center-start/center-end;
+}
+
+.container {
+  grid-column: center-start/center-end;
+
+}

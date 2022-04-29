@@ -5,6 +5,7 @@ import Footer from "../layout/Footer";
 import Header from "../layout/Header";
 import Implementations from "../layout/Implementations";
 import Layout from "../layout/Layout";
+import Math from "../layout/Math";
 import Navigation from "../layout/Navigation";
 import Origin from "../layout/Origin";
 import Research from "../layout/Research";
@@ -22,6 +23,7 @@ const Main = () => {
 			<About />
 			<Origin />
 			<Construction />
+			<Math />
 			<Research />
 			<Visualization />
 			<Implementations />

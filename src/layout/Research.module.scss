@@ -82,17 +82,20 @@
     &--1 {
         grid-row: 2/3;
         grid-column: 1/-1;
+
+
+    }
+    &--2 {
+        grid-row: 4/5;
         display: flex;
         flex-direction: column;
+        grid-column: 1/-1;
+        gap : 3rem;
         &>.img {
             margin-top: -1rem;
             width: 40%;
             align-self: center;
         }
-    }
-    &--2 {
-        grid-row: 4/5;
-        grid-column: 1/-1;
     }
     &--3 {
         grid-row: 6/7;
@@ -104,6 +107,12 @@
         display: flex;
         gap: 10rem;
         align-items: center;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            gap : 3rem;
+        }
+
         &>.image {
             flex: 1;
             width: 25%;
@@ -124,4 +133,29 @@
             align-self: center;
         }
     }
+}
+
+.image__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    gap: 4rem;
+    align-items: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    grid-row: auto;
+
+    @include respond(phone) {
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+        gap: 1rem;
+    }
+
+    &>.img {
+        height: 80%;
+        justify-self: center;
+
+        @include respond(phone) {
+            height:40%;
+        }
+    }
+    
 }

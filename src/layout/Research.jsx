@@ -4,8 +4,22 @@ import Wave from "../components/Wave";
 import classes from "./Research.module.scss";
 import rentgen from "./../assets/img/rentgen.jpg";
 import czesci from "./../assets/img/mechanizm--czesci.png";
-import tomograf from "./../assets/img/tomograf.png";
-
+import t__1 from "./../assets/img/tomograf--1.png"
+import t__2 from "./../assets/img/tomograf--2.png"
+import t__3 from "./../assets/img/tomograf--3.png"
+import t__4 from "./../assets/img/tomograf--4.png"
+import t__5 from "./../assets/img/tomograf--5.png"
+import t__6 from "./../assets/img/tomograf--6.png"
+import t__7 from "./../assets/img/tomograf--7.png"
+import t__8 from "./../assets/img/tomograf--8.png"
+import t__9 from "./../assets/img/tomograf--9.png"
+import t__10 from "./../assets/img/tomograf--.png"
+import t__11 from "./../assets/img/tomograf--10.png"
+import t__12 from "./../assets/img/tomograf--11.png"
+import t__13 from "./../assets/img/tomograf--12.png"
+import t__14 from "./../assets/img/tomograf--13.png"
+import t__15 from "./../assets/img/tomograf--14.png"
+import t__16 from "./../assets/img/tomograf--15.png"
 const Research = () => {
 	return (
 		<section className={classes.research} id="research">
@@ -21,7 +35,7 @@ const Research = () => {
 				<Heading size="3" className={`${classes["heading--1"]} u-margin-bottom-small`}>
 					Początki
 				</Heading>
-				<div className={`${classes["paragraph--1"]} u-margin-bottom-medium`}>
+				<div className={`${classes["paragraph--1"]} u-margin-bottom-big`}>
 					<Paragraph>
 						Mechanizm został zbadany przez dyrektora greckiego Narodowego Muzeum
 						Numizmatycznego - Ioannisowi Svoronosowi oraz filologowi Adolphowi Wilhelmowi z
@@ -30,13 +44,13 @@ const Research = () => {
 						Svoronosowi przy pomocy mikroskopa udało się odczytać 220 greckich liter i
 						dostrzegł wyryte na mechaniźmie znaki zodiaku.
 					</Paragraph>
-					<img src={czesci} className={classes.img} />
+				
 				</div>
 
 				<Heading size="3" className={`${classes["heading--2"]} u-margin-bottom-small`}>
 					Rozkodowywanie
 				</Heading>
-				<div className={`${classes["paragraph--2"]} u-margin-bottom-big`}>
+				<div className={`${classes["paragraph--2"]} u-margin-bottom-medium`}>
 					<Paragraph>
 						W 1907 mechanizm zaczał badać niemiecki filolog Albert Rehm. W międzyczasie
 						eksponat został nieco odczyszczony, co pozwoliło badaczowi odczytać więcej
@@ -46,7 +60,7 @@ const Research = () => {
 						aby poczas niej odczytać 350 kolejnych liter, odkrył podziałkę na jednej z
 						części, stwierdził, że mniejsze koła były uruchamiane przez większe, całość
 						mechanizmu była wprawiana w ruch za pomocą korby.
-					</Paragraph>
+					</Paragraph>	<img src={czesci} className={classes.img} />
 				</div>
 
 				<Heading size="3" className={`${classes["heading--3"]} u-margin-bottom-small`}>
@@ -116,7 +130,24 @@ const Research = () => {
 						wyliczania czasów zaćmień Słońca i Księżyca. Bardzo dokładny model urządzenia
 						przedstawiono w czasopiśmie „Scientific Reports” z 2021 roku.
 					</Paragraph>
-					<img src={tomograf} className={classes.img} />
+					<div className={classes["image__grid"]}>
+						<img src={t__1} className={classes.img}/>
+						<img src={t__2} className={classes.img}/>
+						<img src={t__3} className={classes.img}/>
+						<img src={t__4} className={classes.img}/>
+						<img src={t__5} className={classes.img}/>
+						<img src={t__6} className={classes.img}/>
+						<img src={t__7} className={classes.img}/>
+						<img src={t__8} className={classes.img}/>
+						<img src={t__9} className={classes.img}/>
+						<img src={t__10} className={classes.img}/>
+						<img src={t__11} className={classes.img}/>
+						<img src={t__12} className={classes.img}/>
+						<img src={t__13} className={classes.img}/>
+						<img src={t__14} className={classes.img}/>
+						<img src={t__15} className={classes.img}/>
+						<img src={t__16} className={classes.img}/>
+					</div>
 				</div>
 			</div>
 			<Wave className={classes["wave--1"]} />
