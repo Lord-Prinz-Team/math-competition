@@ -20,7 +20,6 @@ const Origin = () => {
 		translateY: [-80, -80],
 	});
 
-
 	return (
 		<section id="origin" className={classes.origin}>
 			<Wave className={classes.wave} fill="#eee" />
@@ -28,7 +27,7 @@ const Origin = () => {
 			<div className={classes.sky}>
 				<header
 					ref={parallax.ref}
-					className={`${classes.heading} u-center-text u-margin-bottom-big`}
+					className={`${classes.heading ?? ""} u-center-text u-margin-bottom-big`}
 				>
 					<Heading isAnimated={true} size="2" style={{ color: "white" }}>
 						Pochodzenie

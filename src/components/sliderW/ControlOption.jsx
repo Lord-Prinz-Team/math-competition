@@ -5,8 +5,8 @@ const ControlOption = (props) => {
 	const isLoading = props.isLoading;
 	return (
 		<div
-			className={`${classes.control__option} ${isActive && classes.active} ${
-				isLoading && classes.loading
+			className={`${classes.control__option} ${isActive ? classes.active : ""} ${
+				isLoading ? classes.loading : ""
 			}`}
 			onClick={props.onClick}
 		>

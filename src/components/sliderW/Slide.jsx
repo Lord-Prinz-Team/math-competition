@@ -17,8 +17,8 @@ const Slide = (props) => {
 	const normal = (
 		<div
 			className={`${classes.slide} ${classes.fadeIn} ${
-				isFadeOut && classes.fadeOut
-			} ${props.className}`}
+				isFadeOut ? classes.fadeOut : ""
+			} ${props.className ?? ""}`}
 		>
 			<div className={classes.text}>
 				{props?.description?.map((description, index) => (
@@ -36,8 +36,8 @@ const Slide = (props) => {
 	return props.isCustom ? (
 		<div
 			className={`${classes.slide} ${classes.fadeIn} ${
-				isFadeOut && classes.fadeOut
-			} ${props.className}`}
+				isFadeOut ? classes.fadeOut : ""
+			} ${props.className ?? ""}`}
 		>
 			<div className={classes.img__cover}>
 				<img src={`${props.img}`} className={classes.img} />

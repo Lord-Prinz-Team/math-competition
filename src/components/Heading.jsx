@@ -14,8 +14,8 @@ const Heading = (props) => {
 			return (
 				<h1
 					style={props.style}
-					className={`${classes.heading} ${classes["heading--1"]} ${
-						isAnimated && classes.animation
+					className={`${classes.heading ?? ""} ${classes["heading--1"] ?? ""} ${
+						isAnimated ? classes.animation : ""
 					} ${props.className ?? ""}`}
 				>
 					{content}
@@ -25,8 +25,8 @@ const Heading = (props) => {
 			return (
 				<h2
 					style={props.style}
-					className={`${classes.heading} ${classes["heading--2"]} ${
-						isAnimated && classes.animation
+					className={`${classes.heading ?? ""} ${classes["heading--2"] ?? ""} ${
+						isAnimated ? classes.animation : ""
 					} ${props.className ?? ""}`}
 				>
 					{content}
@@ -36,8 +36,8 @@ const Heading = (props) => {
 			return (
 				<h3
 					style={props.style}
-					className={`${classes.heading} ${classes["heading--3"]} ${
-						isAnimated && classes.animation
+					className={`${classes.heading ?? ""} ${classes["heading--3"] ?? ""} ${
+						isAnimated ? classes.animation : ""
 					} ${props.className ?? ""}`}
 				>
 					{content}
@@ -47,8 +47,8 @@ const Heading = (props) => {
 			return (
 				<h4
 					style={props.style}
-					className={`${classes.heading} ${classes["heading--4"]} ${
-						isAnimated && classes.animation
+					className={`${classes.heading ?? ""} ${classes["heading--4"] ?? ""} ${
+						isAnimated ? classes.animation : ""
 					} ${props.className ?? ""}`}
 				>
 					{content}
@@ -58,8 +58,8 @@ const Heading = (props) => {
 			return (
 				<h5
 					style={props.style}
-					className={`${classes.heading} ${classes["heading--5"]} ${
-						isAnimated && classes.animation
+					className={`${classes.heading ?? ""} ${classes["heading--5"] ?? ""} ${
+						isAnimated ? classes.animation : ""
 					} ${props.className ?? ""}`}
 				>
 					{content}
@@ -69,8 +69,8 @@ const Heading = (props) => {
 			return (
 				<h6
 					style={props.style}
-					className={`${classes.heading} ${classes["heading--6"]} ${
-						isAnimated && classes.animation
+					className={`${classes.heading ?? ""} ${classes["heading--6"] ?? ""} ${
+						isAnimated ? classes.animation : ""
 					} ${props.className ?? ""}`}
 				>
 					{content}
