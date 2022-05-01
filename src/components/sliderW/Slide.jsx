@@ -21,13 +21,14 @@ const Slide = (props) => {
 			} ${props.className}`}
 		>
 			<div className={classes.text}>
-				
-				{props?.description?.map((description, index) => <div key={index} className={`${classes.description}`}>
-					{description}
-				</div>)} 
+				{props?.description?.map((description, index) => (
+					<div key={index} className={`${classes.description}`}>
+						{description}
+					</div>
+				))}
 			</div>
 			<div className={classes.img__cover}>
-				<img src={`/${props.img}`} className={classes.img} />
+				<img src={`${props.img}`} className={classes.img} />
 			</div>
 		</div>
 	);
@@ -39,7 +40,7 @@ const Slide = (props) => {
 			} ${props.className}`}
 		>
 			<div className={classes.img__cover}>
-				<img src={`/${props.img}`} className={classes.img} />
+				<img src={`${props.img}`} className={classes.img} />
 			</div>
 		</div>
 	) : (
